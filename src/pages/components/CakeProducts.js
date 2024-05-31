@@ -2,7 +2,7 @@ import React from 'react'
 import "./CakeProducts.css"
 const CakeProducts = (props) => {
   return (
-    <div>
+    <div className='single_cake_product_container'>
       <div className='cakeBaseImg'>
         <img src={props.img} alt="" />
       </div>

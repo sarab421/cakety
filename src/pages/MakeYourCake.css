@@ -5,3 +5,26 @@
         align-items: center;
 }
 
+.cake-product:hover {
+    background-color: rgb(226, 211, 211);
+    
+}
+
+
+.showImgBig img{
+    width: 100%;
+    height: 100%;
+}
+.showImgBig{
+        width: 400px;
+            height: 400px;
+            overflow: hidden;
+}
+
+
+
+
+.top_container{
+    display: flex;
+    justify-content: center;
+}
