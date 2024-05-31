@@ -1,0 +1,49 @@
+.product_container{display: flex;
+justify-content: space-between;}
+
+
+.collections{
+    padding: 21px 107px;
+}
+
+
+.collection_name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection_name_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.collection_name_img {
+    width: 26px;
+        height: 21px;
+    overflow: hidden;
+}
+
+
+.collection_img_name_container{
+    display: flex;
+}
+
+
+
+
+.make_your_own_cake_img img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.make_your_own_cake_img{
+
+   
+    padding: 20px 0px;
+}
+
+
+.collection{
+    margin: 100px 0px;
+}
