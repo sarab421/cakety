@@ -3,10 +3,12 @@
     height: 100%;
 }
 
-.base_shapes_container{
+.color_shapes_container{
     background-color: #ffcbd2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 190px;
+    padding-bottom: 20px;
 
 }
 .color_item1{

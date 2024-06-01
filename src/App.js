@@ -3,8 +3,8 @@ import './App.css';
 import Home from './Home';
 import MakeYourCake from './pages/MakeYourCake';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Flavour from './pages/components/Flavour';
-import Color from './pages/components/Color';
+import Flavour from './pages/Flavour';
+import Color from './pages/Color';
 function App() {
   return (
     <BrowserRouter>

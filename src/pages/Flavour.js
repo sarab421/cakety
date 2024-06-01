@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
-import chocolateFlavour from "../../images/flavourImages/chocolateFlavour.jpg"
-import chocolateInsidePinkFlavour from "../../images/flavourImages/chocolateInsidePinkFlavour.jpg"
-import creamFruitFlavour from "../../images/flavourImages/creamFruitFlavour.jpg"
-import PistaGreenFlavour from "../../images/flavourImages/PistaGreenFlavour.jpg"
-import strawberryFlavour from "../../images/flavourImages/strawberryFlavour.jpg"
-import creamFlavour from "../../images/flavourImages/creamFlavour.jpg"
-import CakeProducts from './CakeProducts';
+import chocolateFlavour from "../images/flavourImages/chocolateFlavour.jpg";
+import chocolateInsidePinkFlavour from "../images/flavourImages/chocolateInsidePinkFlavour.jpg"
+import creamFruitFlavour from "../images/flavourImages/creamFruitFlavour.jpg"
+import PistaGreenFlavour from "../images/flavourImages/PistaGreenFlavour.jpg"
+import strawberryFlavour from "../images/flavourImages/strawberryFlavour.jpg"
+import creamFlavour from "../images/flavourImages/creamFlavour.jpg"
+import CakeProducts from './components/CakeProducts';
 import { useNavigate } from "react-router-dom"; 
 const Flavour = () => {
   const navigate =useNavigate();
@@ -26,12 +26,12 @@ const Flavour = () => {
           roundPistaGreen,
           roundStawberry,
         ] = await Promise.all([
-          import("../../images/RoundFlavour/roundChocolateFlavour.jpg"),
-          import("../../images/RoundFlavour/roundChocolateInsidePink.jpg"),
-          import("../../images/RoundFlavour/roundCream.jpg"),
-          import("../../images/RoundFlavour/roundInsideFruit.jpg"),
-          import("../../images/RoundFlavour/roundPistaGreen.jpg"),
-          import("../../images/RoundFlavour/roundStawberry.jpg"),
+          import("../images/RoundFlavour/roundChocolateFlavour.jpg"),
+          import("../images/RoundFlavour/roundChocolateInsidePink.jpg"),
+          import("../images/RoundFlavour/roundCream.jpg"),
+          import("../images/RoundFlavour/roundInsideFruit.jpg"),
+          import("../images/RoundFlavour/roundPistaGreen.jpg"),
+          import("../images/RoundFlavour/roundStawberry.jpg"),
         ]);
         setImages({
           image1: roundChocolateFlavour.default,

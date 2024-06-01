@@ -1,11 +1,11 @@
 import React, { useState,useEffect } from 'react'
 import { useNavigate } from "react-router-dom"; 
 import { useLocation } from 'react-router-dom';
-import greenColorCircle from "../../images/coloredCircleImages/greenColorCircle.jpg"
-import pinkColorCircle from "../../images/coloredCircleImages/pinkColorCircle.jpg";
-import redColorCircle from "../../images/coloredCircleImages/redColorCircle.jpg";
-import skyColorCircle from "../../images/coloredCircleImages/skyColorCircle.jpg";
-import whiteColorCircle from "../../images/coloredCircleImages/whiteColorCircle.jpg";
+import greenColorCircle from "../images/coloredCircleImages/greenColorCircle.jpg"
+import pinkColorCircle from "../images/coloredCircleImages/pinkColorCircle.jpg";
+import redColorCircle from "../images/coloredCircleImages/redColorCircle.jpg";
+import skyColorCircle from "../images/coloredCircleImages/skyColorCircle.jpg";
+import whiteColorCircle from "../images/coloredCircleImages/whiteColorCircle.jpg";
 import "./Color.css"
 const Color = () => {
   
@@ -26,12 +26,12 @@ const loadImages = async () => {
       roundPistaGreen,
       roundStawberry,
     ] = await Promise.all([
-      import("../../images/RoundFlavour/roundChocolateFlavour.jpg"),
-      import("../../images/RoundFlavour/roundChocolateInsidePink.jpg"),
-      import("../../images/RoundFlavour/roundCream.jpg"),
-      import("../../images/RoundFlavour/roundInsideFruit.jpg"),
-      import("../../images/RoundFlavour/roundPistaGreen.jpg"),
-      import("../../images/RoundFlavour/roundStawberry.jpg"),
+      import("../images/RoundFlavour/roundChocolateFlavour.jpg"),
+      import("../images/RoundFlavour/roundChocolateInsidePink.jpg"),
+      import("../images/RoundFlavour/roundCream.jpg"),
+      import("../images/RoundFlavour/roundInsideFruit.jpg"),
+      import("../images/RoundFlavour/roundPistaGreen.jpg"),
+      import("../images/RoundFlavour/roundStawberry.jpg"),
     ]);
     setImages({
       image1: roundChocolateFlavour.default,
@@ -64,7 +64,7 @@ const loadImages = async () => {
       <div>
         <div className="left_bar_in_color"></div>
       
-        <div className="base_shapes_container ">
+        <div className="color_shapes_container ">
           <div className="colorImagesDiv color_item1">
             <img src={whiteColorCircle} alt="" />
           </div>

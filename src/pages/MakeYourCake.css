@@ -1,9 +1,15 @@
-.base_shapes_container{
+.base_shapes_container {
     display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0;
-        align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 10px;
+    /* Adjust the gap as needed */
+    justify-items: center;
+    /* Centers the items horizontally in the grid cells */
+    align-items: center;
+    /* Centers the items vertically in the grid cells */
 }
+
 
 .cake-product:hover {
     background-color: rgb(226, 211, 211);
@@ -16,8 +22,9 @@
     height: 100%;
 }
 .showImgBig{
-        width: 400px;
-            height: 400px;
+    margin: 50px 10px;
+            width: 368px;
+                height: 175px;
             overflow: hidden;
 }
 
