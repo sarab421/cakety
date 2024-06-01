@@ -52,8 +52,8 @@ console.log("Flavour is: ",name)
         import("../images/colors/cream/green.jpg"),
         import("../images/colors/cream/pink.jpg"),
         import("../images/colors/cream/red.jpg"),
-        import("../images/colors/cream/green.jpg"), // i will change it later
-        import("../images/colors/cream/pink.jpg"), // i will change it later
+        import("../images/colors/cream/sky_blue.jpg"), 
+        import("../images/colors/cream/white.jpg"), 
       ]);
       setImages({
         image1: green.default,
@@ -80,7 +80,7 @@ console.log("Flavour is: ",name)
     } else if (name === "small_round_PistaGreenFlavour") {
       const [green, pink, red, sky_blue, white] = await Promise.all([
         import("../images/colors/pista/green.jpg"),
-        import("../images/colors/pista/green.jpg"), //will change it later
+        import("../images/colors/pista/pink.jpg"), 
         import("../images/colors/pista/red.jpg"),
         import("../images/colors/pista/sky_blue.jpg"),
         import("../images/colors/pista/white.jpg"),
@@ -149,7 +149,31 @@ console.log("Flavour is: ",name)
       }
     }
     
-  else if (name === "small_round_PistaGreenFlavour") {
+  else if (name === "small_round_creamFlavour") {
+    if (colorPicked === whiteColorCircle) {
+      setShowBigImage(images.image2);
+    } else if (colorPicked === skyColorCircle) {
+      setShowBigImage(images.image4);
+    } else if (colorPicked === pinkColorCircle) {
+      setShowBigImage(images.image3);
+    } else if (colorPicked === redColorCircle) {
+      setShowBigImage(images.image5);
+    } else if (colorPicked === greenColorCircle) {
+      setShowBigImage(images.image1);
+    }
+  } else if (name === "small_round_PistaGreenFlavour") {
+    if (colorPicked === whiteColorCircle) {
+      setShowBigImage(images.image2);
+    } else if (colorPicked === skyColorCircle) {
+      setShowBigImage(images.image4);
+    } else if (colorPicked === pinkColorCircle) {
+      setShowBigImage(images.image3);
+    } else if (colorPicked === redColorCircle) {
+      setShowBigImage(images.image5);
+    } else if (colorPicked === greenColorCircle) {
+      setShowBigImage(images.image1);
+    }
+  } else if (name === "small_round_strawberryFlavour") {
     if (colorPicked === whiteColorCircle) {
       setShowBigImage(images.image2);
     } else if (colorPicked === skyColorCircle) {
@@ -162,21 +186,6 @@ console.log("Flavour is: ",name)
       setShowBigImage(images.image1);
     }
   }
-
-  
-    else if (name === "small_round_strawberryFlavour") {
-      if (colorPicked === whiteColorCircle) {
-        setShowBigImage(images.image2);
-      } else if (colorPicked === skyColorCircle) {
-        setShowBigImage(images.image4);
-      } else if (colorPicked === pinkColorCircle) {
-        setShowBigImage(images.image3);
-      } else if (colorPicked === redColorCircle) {
-        setShowBigImage(images.image5);
-      } else if (colorPicked === greenColorCircle) {
-        setShowBigImage(images.image1);
-      }
-    }
   };
 
   useEffect(() => {
