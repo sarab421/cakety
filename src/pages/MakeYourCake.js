@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Correctly import useNavigate
+import { useNavigate } from "react-router-dom"; 
 import small_round_cake_base from "../images/cakebaseImages/small_round_cake_base.jpg";
 import double_cake_base from "../images/cakebaseImages/double_cake_base.jpg";
 import heart_cake_base from "../images/cakebaseImages/heart_cake_base.jpg";
@@ -12,7 +12,7 @@ import CakeProducts from "./components/CakeProducts";
 import "./MakeYourCake.css";
 
 const MakeYourCake = () => {
-  const navigate = useNavigate(); // Correctly initialize useNavigate
+  const navigate = useNavigate(); 
   const [showBigImage, setShowBigImage] = useState(small_round_cake_base);
 
   const handleImageClick = (img) => {

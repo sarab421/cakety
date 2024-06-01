@@ -7,7 +7,9 @@ import PistaGreenFlavour from "../../images/flavourImages/PistaGreenFlavour.jpg"
 import strawberryFlavour from "../../images/flavourImages/strawberryFlavour.jpg"
 import creamFlavour from "../../images/flavourImages/creamFlavour.jpg"
 import CakeProducts from './CakeProducts';
+import { useNavigate } from "react-router-dom"; 
 const Flavour = () => {
+  const navigate =useNavigate();
   const location=useLocation();
     const { base_shape } = location.state || {};
     const { name } = location.state || {};
@@ -145,10 +147,56 @@ const Flavour = () => {
           }
         }
       }
+    const takeToColor=()=>{
 
-      useEffect(()=>{
-        loadImages()
-      },[])
+   if (showBigImage === images.image1) {
+     navigate("/color", {
+       state: {
+         flavourPicked: images.image1,
+         name: "small_round_chocolateFlavour",
+       },
+     });
+   } else if (showBigImage === images.image2) {
+     navigate("/color", {
+       state: {
+         flavourPicked: images.image2,
+         name: "small_round_chocolateInsidePinkFlavour",
+       },
+     });
+   } else if (showBigImage === images.image3) {
+     navigate("/color", {
+       state: {
+         flavourPicked: images.image3,
+         name: "small_round_creamFlavour",
+       },
+     });
+   } else if (showBigImage === images.image4) {
+     navigate("/color", {
+       state: {
+         flavourPicked: images.image4,
+         name: "small_round_creamFruitFlavour",
+       },
+     });
+   } else if (showBigImage === images.image5) {
+     navigate("/color", {
+       state: {
+         flavourPicked: images.image5,
+         name: "small_round_PistaGreenFlavour",
+       },
+     });
+   } else if (showBigImage === images.image6) {
+     navigate("/color", {
+       state: {
+         flavourPicked: images.image6,
+         name: "small_round_strawberryFlavour",
+       },
+     });
+   } 
+    }
+
+      useEffect(() => {
+        loadImages();
+      }, [loadImages]);
     return (
       <div>
         <div className="top_container">
@@ -240,7 +288,7 @@ const Flavour = () => {
           </div>
         </div>
         <div>
-          <button>Next</button>
+          <button onClick={takeToColor}>Next</button>
         </div>
       </div>
     );
