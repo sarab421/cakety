@@ -46,7 +46,7 @@ const Flavour = () => {
       //   const []
       // }
       }
-        loadImages();
+        
       const handleFlavourImageClick=(pickedFlavour)=>{
         if (name === "small_round_cake_base") {
           if (pickedFlavour === creamFlavour) {
@@ -195,7 +195,9 @@ const Flavour = () => {
    } 
     }
 
-     
+     useEffect(()=>{
+      loadImages();
+     },[]);
       
      
     return (
