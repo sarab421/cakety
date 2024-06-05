@@ -26,12 +26,12 @@ const Flavour = () => {
           roundPistaGreen,
           roundStawberry,
         ] = await Promise.all([
-          import("../images/RoundFlavour/roundChocolateFlavour.jpg"),
-          import("../images/RoundFlavour/roundChocolateInsidePink.jpg"),
-          import("../images/RoundFlavour/roundCream.jpg"),
-          import("../images/RoundFlavour/roundInsideFruit.jpg"),
-          import("../images/RoundFlavour/roundPistaGreen.jpg"),
-          import("../images/RoundFlavour/roundStawberry.jpg"),
+          import("../images/Flavour/RoundFlavour/roundChocolateFlavour.jpg"),
+          import("../images/Flavour/RoundFlavour/roundChocolateInsidePink.jpg"),
+          import("../images/Flavour/RoundFlavour/roundCream.jpg"),
+          import("../images/Flavour/RoundFlavour/roundInsideFruit.jpg"),
+          import("../images/Flavour/RoundFlavour/roundPistaGreen.jpg"),
+          import("../images/Flavour/RoundFlavour/roundStawberry.jpg"),
         ]);
         setImages({
           image1: roundChocolateFlavour.default,
@@ -39,12 +39,33 @@ const Flavour = () => {
           image3: roundCream.default,
           image4: roundInsideFruit.default,
           image5: roundPistaGreen.default,
-          image6: roundStawberry.default
+          image6: roundStawberry.default,
+        });
+      } else if (name === "heart_cake_base") {
+        const [
+          heartChocolateFlavour,
+          heartChocolateInsidePink,
+          heartCream,
+          heartInsideFruit,
+          heartPistaGreen,
+          heartStawberry,
+        ] = await Promise.all([
+          import("../images/Flavour/HeartFlavour/chocolateHeartFlavour.jpg"),
+          import("../images/Flavour/HeartFlavour/chocolatePinkInsideFlavour.jpg"),
+          import("../images/Flavour/HeartFlavour/creamHeartFlavour.jpg"),
+          import("../images/Flavour/HeartFlavour/FruitInsideFlavour.jpg"),
+          import("../images/Flavour/HeartFlavour/pistaGreenHeart.jpg"),
+          import("../images/Flavour/HeartFlavour/StawberryFlavour.jpg"),
+        ]);
+        setImages({
+          image1: heartChocolateFlavour.default,
+          image2: heartChocolateInsidePink.default,
+          image3: heartCream.default,
+          image4: heartInsideFruit.default,
+          image5: heartPistaGreen.default,
+          image6: heartStawberry.default,
         });
       }
-      //  else if (number === 2) {
-      //   const []
-      // }
       }
         
       const handleFlavourImageClick=(pickedFlavour)=>{
@@ -104,35 +125,7 @@ const Flavour = () => {
           } else if (pickedFlavour === strawberryFlavour) {
             setShowBigImage(images.image6);
           }
-        } else if (name === "round_cake_base") {
-          if (pickedFlavour === creamFlavour) {
-            setShowBigImage(images.image3);
-          } else if (pickedFlavour === chocolateFlavour) {
-            setShowBigImage(images.image1);
-          } else if (pickedFlavour === chocolateInsidePinkFlavour) {
-            setShowBigImage(images.image2);
-          } else if (pickedFlavour === PistaGreenFlavour) {
-            setShowBigImage(images.image5);
-          } else if (pickedFlavour === creamFruitFlavour) {
-            setShowBigImage(images.image4);
-          } else if (pickedFlavour === strawberryFlavour) {
-            setShowBigImage(images.image6);
-          }
-        } else if (name === "medium_heart_cake_base") {
-          if (pickedFlavour === creamFlavour) {
-            setShowBigImage(images.image3);
-          } else if (pickedFlavour === chocolateFlavour) {
-            setShowBigImage(images.image1);
-          } else if (pickedFlavour === chocolateInsidePinkFlavour) {
-            setShowBigImage(images.image2);
-          } else if (pickedFlavour === PistaGreenFlavour) {
-            setShowBigImage(images.image5);
-          } else if (pickedFlavour === creamFruitFlavour) {
-            setShowBigImage(images.image4);
-          } else if (pickedFlavour === strawberryFlavour) {
-            setShowBigImage(images.image6);
-          }
-        } else if (name === "square_cake_base") {
+        }  else if (name === "square_cake_base") {
           if (pickedFlavour === creamFlavour) {
             setShowBigImage(images.image3);
           } else if (pickedFlavour === chocolateFlavour) {
@@ -150,50 +143,99 @@ const Flavour = () => {
       }
     const takeToColor=()=>{
 
-   if (showBigImage === images.image1) {
-     navigate("/color", {
-       state: {
-         flavourPicked: images.image1,
-         name: "small_round_chocolateFlavour",
-       },
-     });
-   } else if (showBigImage === images.image2) {
-     navigate("/color", {
-       state: {
-         flavourPicked: images.image2,
-         name: "small_round_chocolateInsidePinkFlavour",
-       },
-     });
-   } else if (showBigImage === images.image3) {
-     navigate("/color", {
-       state: {
-         flavourPicked: images.image3,
-         name: "small_round_creamFlavour",
-       },
-     });
-   } else if (showBigImage === images.image4) {
-     navigate("/color", {
-       state: {
-         flavourPicked: images.image4,
-         name: "small_round_creamFruitFlavour",
-       },
-     });
-   } else if (showBigImage === images.image5) {
-     navigate("/color", {
-       state: {
-         flavourPicked: images.image5,
-         name: "small_round_PistaGreenFlavour",
-       },
-     });
-   } else if (showBigImage === images.image6) {
-     navigate("/color", {
-       state: {
-         flavourPicked: images.image6,
-         name: "small_round_strawberryFlavour",
-       },
-     });
-   } 
+  if (name === "small_round_cake_base") {
+    if (showBigImage === images.image1) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image1,
+          name: "small_round_chocolateFlavour",
+        },
+      });
+    } else if (showBigImage === images.image2) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image2,
+          name: "small_round_chocolateInsidePinkFlavour",
+        },
+      });
+    } else if (showBigImage === images.image3) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image3,
+          name: "small_round_creamFlavour",
+        },
+      });
+    } else if (showBigImage === images.image4) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image4,
+          name: "small_round_creamFruitFlavour",
+        },
+      });
+    } else if (showBigImage === images.image5) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image5,
+          name: "small_round_PistaGreenFlavour",
+        },
+      });
+    } else if (showBigImage === images.image6) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image6,
+          name: "small_round_strawberryFlavour",
+        },
+      });
     }
+  } else if (name === "heart_cake_base") {
+    if (showBigImage === images.image1) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image1,
+          name: "heart_chocolateFlavour",
+        },
+      });
+    } else if (showBigImage === images.image2) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image2,
+          name: "heart_chocolateInsidePinkFlavour",
+        },
+      });
+    } else if (showBigImage === images.image3) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image3,
+          name: "heart_creamFlavour",
+        },
+      });
+    } else if (showBigImage === images.image4) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image4,
+          name: "heart_creamFruitFlavour",
+        },
+      });
+    } else if (showBigImage === images.image5) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image5,
+          name: "heart_PistaGreenFlavour",
+        },
+      });
+    } else if (showBigImage === images.image6) {
+      navigate("/color", {
+        state: {
+          flavourPicked: images.image6,
+          name: "heart_strawberryFlavour",
+        },
+      });
+    }
+  }
+    
+  
+  
+  }
 
      useEffect(()=>{
       loadImages();

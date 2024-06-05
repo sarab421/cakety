@@ -19,11 +19,11 @@ console.log("Flavour is: ",name)
   const loadImages = async () => {
     if (name === "small_round_chocolateFlavour") {
       const [green, pink, red, sky_blue, white] = await Promise.all([
-        import("../images/colors/chocolate/green.jpg"),
-        import("../images/colors/chocolate/pink.jpg"),
-        import("../images/colors/chocolate/red.jpg"),
-        import("../images/colors/chocolate/sky_blue.jpg"),
-        import("../images/colors/chocolate/white.jpg"),
+        import("../images/colors/roundCircle/chocolate/green.jpg"),
+        import("../images/colors/roundCircle/chocolate/pink.jpg"),
+        import("../images/colors/roundCircle/chocolate/red.jpg"),
+        import("../images/colors/roundCircle/chocolate/sky_blue.jpg"),
+        import("../images/colors/roundCircle/chocolate/white.jpg"),
       ]);
       setImages({
         image1: green.default,
@@ -34,11 +34,11 @@ console.log("Flavour is: ",name)
       });
     } else if (name === "small_round_chocolateInsidePinkFlavour") {
       const [green, pink, red, sky_blue, white] = await Promise.all([
-        import("../images/colors/chocolateInsidePink/green.jpg"),
-        import("../images/colors/chocolateInsidePink/pink.jpg"),
-        import("../images/colors/chocolateInsidePink/red.jpg"),
-        import("../images/colors/chocolateInsidePink/sky_blue.jpg"),
-        import("../images/colors/chocolateInsidePink/white.jpg"),
+        import("../images/colors/roundCircle/chocolateInsidePink/green.jpg"),
+        import("../images/colors/roundCircle/chocolateInsidePink/pink.jpg"),
+        import("../images/colors/roundCircle/chocolateInsidePink/red.jpg"),
+        import("../images/colors/roundCircle/chocolateInsidePink/sky_blue.jpg"),
+        import("../images/colors/roundCircle/chocolateInsidePink/white.jpg"),
       ]);
       setImages({
         image1: green.default,
@@ -49,11 +49,11 @@ console.log("Flavour is: ",name)
       });
     } else if (name === "small_round_creamFlavour") {
       const [green, pink, red, sky_blue, white] = await Promise.all([
-        import("../images/colors/cream/green.jpg"),
-        import("../images/colors/cream/pink.jpg"),
-        import("../images/colors/cream/red.jpg"),
-        import("../images/colors/cream/sky_blue.jpg"), 
-        import("../images/colors/cream/white.jpg"), 
+        import("../images/colors/roundCircle/cream/green.jpg"),
+        import("../images/colors/roundCircle/cream/pink.jpg"),
+        import("../images/colors/roundCircle/cream/red.jpg"),
+        import("../images/colors/roundCircle/cream/sky_blue.jpg"),
+        import("../images/colors/roundCircle/cream/white.jpg"),
       ]);
       setImages({
         image1: green.default,
@@ -64,11 +64,11 @@ console.log("Flavour is: ",name)
       });
     } else if (name === "small_round_strawberryFlavour") {
       const [green, pink, red, sky_blue, white] = await Promise.all([
-        import("../images/colors/straberry/green.jpg"),
-        import("../images/colors/straberry/pink.jpg"),
-        import("../images/colors/straberry/red.jpg"),
-        import("../images/colors/straberry/sky_blue.jpg"),
-        import("../images/colors/straberry/white.jpg"),
+        import("../images/colors/roundCircle/straberry/green.jpg"),
+        import("../images/colors/roundCircle/straberry/pink.jpg"),
+        import("../images/colors/roundCircle/straberry/red.jpg"),
+        import("../images/colors/roundCircle/straberry/sky_blue.jpg"),
+        import("../images/colors/roundCircle/straberry/white.jpg"),
       ]);
       setImages({
         image1: green.default,
@@ -79,11 +79,11 @@ console.log("Flavour is: ",name)
       });
     } else if (name === "small_round_PistaGreenFlavour") {
       const [green, pink, red, sky_blue, white] = await Promise.all([
-        import("../images/colors/pista/green.jpg"),
-        import("../images/colors/pista/pink.jpg"), 
-        import("../images/colors/pista/red.jpg"),
-        import("../images/colors/pista/sky_blue.jpg"),
-        import("../images/colors/pista/white.jpg"),
+        import("../images/colors/roundCircle/pista/green.jpg"),
+        import("../images/colors/roundCircle/pista/pink.jpg"),
+        import("../images/colors/roundCircle/pista/red.jpg"),
+        import("../images/colors/roundCircle/pista/sky_blue.jpg"),
+        import("../images/colors/roundCircle/pista/white.jpg"),
       ]);
       setImages({
         image1: green.default,
@@ -94,11 +94,104 @@ console.log("Flavour is: ",name)
       });
     } else if (name === "small_round_creamFruitFlavour") {
       const [green, pink, red, sky_blue, white] = await Promise.all([
-        import("../images/colors/fruits/green.jpg"),
-        import("../images/colors/fruits/green.jpg"), 
-        import("../images/colors/fruits/red.jpg"),
-        import("../images/colors/fruits/sky_blue.jpg"),
-        import("../images/colors/fruits/white.jpg"),
+        import("../images/colors/roundCircle/fruits/green.jpg"),
+        import("../images/colors/roundCircle/fruits/green.jpg"),
+        import("../images/colors/roundCircle/fruits/red.jpg"),
+        import("../images/colors/roundCircle/fruits/sky_blue.jpg"),
+        import("../images/colors/roundCircle/fruits/white.jpg"),
+      ]);
+      setImages({
+        image1: green.default,
+        image2: white.default,
+        image3: pink.default,
+        image4: sky_blue.default,
+        image5: red.default,
+      });
+    }
+
+    //heart category
+    else if (name === "heart_chocolateFlavour") {
+      const [green, pink, red, sky_blue, white] = await Promise.all([
+        import("../images/colors/heart/chocolate/green.jpg"),
+        import("../images/colors/heart/chocolate/green.jpg"),
+        import("../images/colors/heart/chocolate/red.jpg"),
+        import("../images/colors/heart/chocolate/sky_blue.jpg"),
+        import("../images/colors/heart/chocolate/white.jpg"),
+      ]);
+      setImages({
+        image1: green.default,
+        image2: white.default,
+        image3: pink.default,
+        image4: sky_blue.default,
+        image5: red.default,
+      });
+    } else if (name === "heart_chocolateInsidePinkFlavour") {
+      const [green, pink, red, sky_blue, white] = await Promise.all([
+        import("../images/colors/heart/ChocolateInsidePink/green.jpg"),
+        import("../images/colors/heart/ChocolateInsidePink/pink.jpg"),
+        import("../images/colors/heart/ChocolateInsidePink/red.jpg"),
+        import("../images/colors/heart/ChocolateInsidePink/sky_blue.jpg"),
+        import("../images/colors/heart/ChocolateInsidePink/white.jpg"),
+      ]);
+      setImages({
+        image1: green.default,
+        image2: white.default,
+        image3: pink.default,
+        image4: sky_blue.default,
+        image5: red.default,
+      });
+    } else if (name === "heart_creamFlavour") {
+      const [green, pink, red, sky_blue, white] = await Promise.all([
+        import("../images/colors/heart/cream/green.jpg"),
+        import("../images/colors/heart/cream/pink.jpg"),
+        import("../images/colors/heart/cream/red.jpg"),
+        import("../images/colors/heart/cream/sky_blue.jpg"),
+        import("../images/colors/heart/cream/white.jpg"),
+      ]);
+      setImages({
+        image1: green.default,
+        image2: white.default,
+        image3: pink.default,
+        image4: sky_blue.default,
+        image5: red.default,
+      });
+    } else if (name === "heart_creamFruitFlavour") {
+      const [green, pink, red, sky_blue, white] = await Promise.all([
+        import("../images/colors/heart/cream/green.jpg"),
+        import("../images/colors/heart/cream/pink.jpg"),
+        import("../images/colors/heart/cream/red.jpg"),
+        import("../images/colors/heart/cream/sky_blue.jpg"),
+        import("../images/colors/heart/cream/white.jpg"),
+      ]);
+      setImages({
+        image1: green.default,
+        image2: white.default,
+        image3: pink.default,
+        image4: sky_blue.default,
+        image5: red.default,
+      });
+    } else if (name === "heart_PistaGreenFlavour") {
+      const [green, pink, red, sky_blue, white] = await Promise.all([
+        import("../images/colors/heart/pista/green.jpg"),
+        import("../images/colors/heart/pista/pink.jpg"),
+        import("../images/colors/heart/pista/red.jpg"),
+        import("../images/colors/heart/pista/sky_blue.jpg"),
+        import("../images/colors/heart/pista/white.jpg"),
+      ]);
+      setImages({
+        image1: green.default,
+        image2: white.default,
+        image3: pink.default,
+        image4: sky_blue.default,
+        image5: red.default,
+      });
+    } else if (name === "heart_strawberryFlavour") {
+      const [green, pink, red, sky_blue, white] = await Promise.all([
+        import("../images/colors/heart/shawberry/green.jpg"),
+        import("../images/colors/heart/shawberry/pink.jpg"),
+        import("../images/colors/heart/shawberry/red.jpg"),
+        import("../images/colors/heart/shawberry/sky_blue.jpg"),
+        import("../images/colors/heart/shawberry/white.jpg"),
       ]);
       setImages({
         image1: green.default,
@@ -111,45 +204,7 @@ console.log("Flavour is: ",name)
   };
 
   const handleColorImageClick = (colorPicked) => {
-    if (name === "small_round_chocolateFlavour") {
-      if (colorPicked === whiteColorCircle) {
-        setShowBigImage(images.image2);
-      } else if (colorPicked === skyColorCircle) {
-        setShowBigImage(images.image4);
-      } else if (colorPicked === pinkColorCircle) {
-        setShowBigImage(images.image3);
-      } else if (colorPicked === redColorCircle) {
-        setShowBigImage(images.image5);
-      } else if (colorPicked === greenColorCircle) {
-        setShowBigImage(images.image1);
-      }
-    } else if (name === "small_round_chocolateInsidePinkFlavour") {
-      if (colorPicked === whiteColorCircle) {
-        setShowBigImage(images.image2);
-      } else if (colorPicked === skyColorCircle) {
-        setShowBigImage(images.image4);
-      } else if (colorPicked === pinkColorCircle) {
-        setShowBigImage(images.image3);
-      } else if (colorPicked === redColorCircle) {
-        setShowBigImage(images.image5);
-      } else if (colorPicked === greenColorCircle) {
-        setShowBigImage(images.image1);
-      }
-    } else if (name === "small_round_creamFruitFlavour") {
-      if (colorPicked === whiteColorCircle) {
-        setShowBigImage(images.image2);
-      } else if (colorPicked === skyColorCircle) {
-        setShowBigImage(images.image4);
-      } else if (colorPicked === pinkColorCircle) {
-        setShowBigImage(images.image3);
-      } else if (colorPicked === redColorCircle) {
-        setShowBigImage(images.image5);
-      } else if (colorPicked === greenColorCircle) {
-        setShowBigImage(images.image1);
-      }
-    }
-    
-  else if (name === "small_round_creamFlavour") {
+  
     if (colorPicked === whiteColorCircle) {
       setShowBigImage(images.image2);
     } else if (colorPicked === skyColorCircle) {
@@ -161,31 +216,7 @@ console.log("Flavour is: ",name)
     } else if (colorPicked === greenColorCircle) {
       setShowBigImage(images.image1);
     }
-  } else if (name === "small_round_PistaGreenFlavour") {
-    if (colorPicked === whiteColorCircle) {
-      setShowBigImage(images.image2);
-    } else if (colorPicked === skyColorCircle) {
-      setShowBigImage(images.image4);
-    } else if (colorPicked === pinkColorCircle) {
-      setShowBigImage(images.image3);
-    } else if (colorPicked === redColorCircle) {
-      setShowBigImage(images.image5);
-    } else if (colorPicked === greenColorCircle) {
-      setShowBigImage(images.image1);
-    }
-  } else if (name === "small_round_strawberryFlavour") {
-    if (colorPicked === whiteColorCircle) {
-      setShowBigImage(images.image2);
-    } else if (colorPicked === skyColorCircle) {
-      setShowBigImage(images.image4);
-    } else if (colorPicked === pinkColorCircle) {
-      setShowBigImage(images.image3);
-    } else if (colorPicked === redColorCircle) {
-      setShowBigImage(images.image5);
-    } else if (colorPicked === greenColorCircle) {
-      setShowBigImage(images.image1);
-    }
-  }
+  
   };
 
   useEffect(() => {

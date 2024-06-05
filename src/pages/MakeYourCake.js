@@ -38,13 +38,13 @@ const MakeYourCake = () => {
       });
     } else if (showBigImage === round_cake_base) {
       navigate("/flavour", {
-        state: { base_shape: round_cake_base, name: "round_cake_base" },
+        state: { base_shape: round_cake_base, name: "small_round_cake_base" },
       });
     } else if (showBigImage === medium_heart_cake_base) {
       navigate("/flavour", {
         state: {
           base_shape: medium_heart_cake_base,
-          name: "medium_heart_cake_base",
+          name: "heart_cake_base",
         },
       });
     } else if (showBigImage === square_cake_base) {
